@@ -20,7 +20,7 @@ def on_message(client, userdata, msg):
     global MSGDICT
     global workload
     MSGDICT = dict(json.loads(msg.payload))  # Convert the message payload to a dictionary that can be easily used.
-    workload = MSGDICT['outputValues']['value']  # This is where the workload value can be found in the sample output
+    workload = MSGDICT['outputValues'][0]['value']  # This is where the workload value can be found in the sample output
     # This loop here can be altered to send specific messages to the MCITOPIC for the phone to display.
     if workload <= 33:
         # Send 3 sample messages for the phone to read, each 5 seconds apart
