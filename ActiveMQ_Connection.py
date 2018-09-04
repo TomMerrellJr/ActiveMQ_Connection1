@@ -44,6 +44,7 @@ def on_message(client, userdata, msg):
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
     client.subscribe("Toolkit.DataMessage.JSON")
+    client.subscribe("measure")
     publish.single("MCITOPIC", "(S)", 0)  # this will be used to sync the WAD timer with the connection of this program
 
 
@@ -56,3 +57,5 @@ client.on_message = on_message
 time.sleep(2)
 
 client.loop_forever()
+while True:
+    time.sleep(10)  # Sleep for 10 seconds before reading again

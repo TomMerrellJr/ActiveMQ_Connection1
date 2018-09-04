@@ -4,6 +4,18 @@
     <list default="true" id="6431c5b3-4e9e-419f-bfc1-5de10c4ce364" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ActiveMQ_Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/ActiveMQ_Connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/ActiveMQ_Connection.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/ActiveMQ_Connection.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/base_library.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-Analysis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-Analysis.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-COLLECT.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-COLLECT.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-EXE.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-EXE.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-PKG.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-PKG.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-PYZ.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-PYZ.pyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-PYZ.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/out00-PYZ.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/warnActiveMQ_Connection.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/warnActiveMQ_Connection.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ActiveMQ_Connection/xref-ActiveMQ_Connection.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/ActiveMQ_Connection/xref-ActiveMQ_Connection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ActiveMQ_Connection/ActiveMQ_Connection.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ActiveMQ_Connection/ActiveMQ_Connection.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ActiveMQ_Connection/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ActiveMQ_Connection/base_library.zip" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,15 +25,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ActiveMQ_Connection$ActiveMQ_Connection.coverage" NAME="ActiveMQ_Connection Coverage Results" MODIFIED="1534910092919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ActiveMQ_Connection$ActiveMQ_Connection.coverage" NAME="ActiveMQ_Connection Coverage Results" MODIFIED="1535119116030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ActiveMQ_Connection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ActiveMQ_Connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="1037">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#160#191#0" expanded="true" />
               </folding>
@@ -59,8 +71,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
@@ -69,23 +82,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ActiveMQ_Connection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ActiveMQ_Connection" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="RSettings" />
@@ -146,11 +147,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534908170378</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Corrected the read from only reading a dict to reading the [list]{dict} for the on_message loop">
+      <created>1534910298209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534910298209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="745" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -158,8 +166,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.31269842" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4992658" weight="0.21974522" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.3114241" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4992658" weight="0.28638497" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.35095447" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -187,9 +195,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some comments" />
+    <MESSAGE value="Corrected the read from only reading a dict to reading the [list]{dict} for the on_message loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected the read from only reading a dict to reading the [list]{dict} for the on_message loop" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ActiveMQ_Connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="21" selection-start-line="33" selection-end-line="34" />
+          <folding>
+            <element signature="e#160#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActiveMQ_Connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="55" selection-end-line="56" />
+          <folding>
+            <element signature="e#160#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ActiveMQ_Connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -237,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ActiveMQ_Connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="1037">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#160#191#0" expanded="true" />
           </folding>
