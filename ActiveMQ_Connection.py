@@ -25,18 +25,24 @@ def on_message(client, userdata, msg):
     if workload <= 33:
         # Send 3 sample messages for the phone to read, each 5 seconds apart
         publish.single("MCITOPIC", "(H) This is a sample high priority alert", 0)
+        print("message")
         time.sleep(5)
         publish.single("MCITOPIC", "(M) This is a sample moderate priority alert", 0)
+        print("message")
         time.sleep(5)
         publish.single("MCITOPIC", "(L) This is a sample low priority alert", 0)
+        print("message")
     elif 33 < workload <= 67:
         # Send 2 sample messages for the phone to read each 5 seconds apart
         publish.single("MCITOPIC", "(H) this is a sample high priority alert", 0)
+        print("message")
         time.sleep(5)
         publish.single("MCITOPIC", "(M) This is a sample moderate priority alert", 0)
+        print("message")
     elif workload > 67:
         # only send the "high" priority alert for the phone to read
         publish.single("MCITOPIC", "(H) This is a sample high priority alert", 0)
+        print("message")
     else:
         print("Cannot find the mental workload value")
 
