@@ -1,0 +1,4 @@
+Need to identify the priority ranking for the tasks
+    - use this in loops to publish messages
+    - possibly use a while loop in place of if loops for workload
+        - i.e. while workload < 33: ...

@@ -4,7 +4,6 @@
 import paho.mqtt.client as mqtt
 import paho.mqtt.publish as publish
 
-
 import json
 import time
 
@@ -13,7 +12,6 @@ port = 1883  # The mqtt broker port
 
 MSGDICT = {}
 workload = 0
-
 
 # Define the Callback
 def on_message(client, userdata, msg):
@@ -25,31 +23,31 @@ def on_message(client, userdata, msg):
     if workload <= 33:
         # Send 3 sample messages for the phone to read, each 5 seconds apart
         publish.single("MCITOPIC", "(H) This is a sample high priority alert", 0)
-        print("message")
+        print("Low workload, High Priority")
         time.sleep(5)
         publish.single("MCITOPIC", "(M) This is a sample moderate priority alert", 0)
-        print("message")
+        print("Low workload, Mod Priority")
         time.sleep(5)
         publish.single("MCITOPIC", "(L) This is a sample low priority alert", 0)
-        print("message")
+        print("Low workload, Low Priority")
     elif 33 < workload <= 67:
         # Send 2 sample messages for the phone to read each 5 seconds apart
         publish.single("MCITOPIC", "(H) this is a sample high priority alert", 0)
-        print("message")
+        print("Med workload, High Priority")
         time.sleep(5)
         publish.single("MCITOPIC", "(M) This is a sample moderate priority alert", 0)
-        print("message")
+        print("Med workload, Mod Priority")
     elif workload > 67:
         # only send the "high" priority alert for the phone to read
         publish.single("MCITOPIC", "(H) This is a sample high priority alert", 0)
-        print("message")
+        print("High workload, High Priority")
     else:
         print("Cannot find the mental workload value")
 
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
-    client.subscribe("Toolkit.DataMessage.JSON")
+    client.subscribe("Toolkit/DataMessage/JSON")
     client.subscribe("measure")
     publish.single("MCITOPIC", "(S)", 0)  # this will be used to sync the WAD timer with the connection of this program
 
@@ -60,8 +58,4 @@ client.connect(broker, port)
 client.on_connect = on_connect
 client.on_message = on_message
 
-time.sleep(2)
-
 client.loop_forever()
-while True:
-    time.sleep(10)  # Sleep for 10 seconds before reading again
