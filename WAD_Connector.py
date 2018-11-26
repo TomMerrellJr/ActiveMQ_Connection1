@@ -197,6 +197,84 @@ def on_message_skills(client, userdata, msg):
                     msg_list.append('(L) Basic Piloting Skills')
                     print("Low priority alert for skill: ", listofkeys[i])
                     i += 1
+            elif listofkeys[i] == '14':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Search Plans')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Search Plans')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 3.5 <= skills[listofkeys[i]]:
+                    msg_list.append('(L) Search Plans')
+                    print("Low priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '15':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Geographic Features')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Geographic Features')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 3.5 <= skills[listofkeys[i]]:
+                    msg_list.append('(L) Geographic Features')
+                    print("Low priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '16':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Target Area Awareness')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Target Area Awareness')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 3.5 <= skills[listofkeys[i]]:
+                    msg_list.append('(L) Target Area Awareness')
+                    print("Low priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '17':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Sensor Application')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Sensor Application')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 3.5 <= skills[listofkeys[i]]:
+                    msg_list.append('(L) Sensor Application')
+                    print("Low priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '18':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Airfield Conditions')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Airfield Conditions')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 3.5 <= skills[listofkeys[i]]:
+                    msg_list.append('(L) Airfield Conditions')
+                    print("Low priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '19':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Divert')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Divert')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 3.5 <= skills[listofkeys[i]]:
+                    msg_list.append('(L) Divert')
+                    print("Low priority alert for skill: ", listofkeys[i])
+                    i += 1
         elif 33 < WORKLOAD <= 67:
             if listofkeys[i] == '2':
                 if 0 <= skills[listofkeys[i]] < 2:
@@ -307,6 +385,60 @@ def on_message_skills(client, userdata, msg):
                     publish.single('MCITOPIC', '(M) Basic Piloting Skills', 0)
                     print("Med. priority alert for skill: ", listofkeys[i])
                     i += 1
+            elif listofkeys[i] == '14':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Search Plans')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Search Plans')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '15':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Geographic Features')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Geographic Features')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '16':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Target Area Awareness')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Target Area Awareness')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '17':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Sensor Application')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Sensor Application')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '18':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Airfield Conditions')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Airfield Conditions')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '19':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Divert')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+                elif 2 <= skills[listofkeys[i]] < 3.5:
+                    msg_list.append('(M) Divert')
+                    print("Med. priority alert for skill: ", listofkeys[i])
+                    i += 1
         elif 67 < WORKLOAD:
             if listofkeys[i] == '2':
                 if 0 <= skills[listofkeys[i]] < 2:
@@ -366,6 +498,36 @@ def on_message_skills(client, userdata, msg):
             elif listofkeys[i] == '13':
                 if 0 <= skills[listofkeys[i]] < 2:
                     publish.single('MCITOPIC', '(H) Basic Piloting Skills', 0)
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '14':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Search Plans')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '15':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Geographic Features')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '16':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Target Area Awareness')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '17':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Sensor Application')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '18':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Airfield Conditions')
+                    print("High priority alert for skill: ", listofkeys[i])
+                    i += 1
+            elif listofkeys[i] == '19':
+                if 0 <= skills[listofkeys[i]] < 2:
+                    msg_list.append('(H) Divert')
                     print("High priority alert for skill: ", listofkeys[i])
                     i += 1
 
